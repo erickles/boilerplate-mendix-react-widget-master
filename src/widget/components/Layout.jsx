@@ -16,14 +16,47 @@ class Layout extends Component {
     componentDidMount(){
 
         const {params} = this.props;
+        console.log("Params", params);
         const option = params.collection[ 0 ];
         this.setState({ selectedIndex: option.text });
     }
 
     switchOption(e) {
-        this.setState({ selectedIndex: e.target.id });
-    }
 
+        const {obj, params} = this.props;
+
+        this.setState({ selectedIndex: e.target.id });
+
+        //const messageMicroflow = params.messageMicroflow;
+        /*
+        if(messageMicroflow !== ""){
+            this.executeMicroflow(messageMicroflow,undefined, )
+        }
+        */
+       console.log(params.messageMicroflow);
+       console.log(obj);
+    }
+    /*
+    executeMicroflow(mf, guid, cb) {
+
+        if (mf && guid) {
+            window.mx.ui.action(mf, {
+                params: {
+                    applyto: "selection",
+                    guids: [guid]
+                },
+                callback: lang.hitch(this, function (objs) {
+                    if (cb && typeof cb === "function") {
+                        cb(objs);
+                    }
+                }),
+                error: function (error) {
+                    console.debug(error.description);
+                }
+            }, this);
+        }
+    }
+    */
     render() {
 
         const {params} = this.props;
@@ -44,6 +77,7 @@ class Layout extends Component {
 
 Layout.propTypes = {
     params: PropTypes.object.isRequired,
+    obj: PropTypes.object.isRequired,
 };
 
 export default Layout;

@@ -13,7 +13,7 @@ declare("HelloWorld.widget.HelloWorld", [widgetBase], {
     },
 
     update: function (obj, cb) {
-        ReactDOM.render(<Layout params={this.params}/>, this.domNode);
+        ReactDOM.render(<Layout obj={obj} params={this.params}/>, this.domNode);
         cb();
     },
 

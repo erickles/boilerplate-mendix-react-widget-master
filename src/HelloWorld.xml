@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="HelloWorld.widget.HelloWorld" needsEntityContext="false" 
+<widget id="HelloWorld.widget.HelloWorld" needsEntityContext="false"
     xmlns="http://www.mendix.com/widget/1.0/">
     <name>HelloWorld</name>
     <description>This shows Hello World through React</description>
     <icon />
     <properties>
-        <property key="collection" type="object" isList="true">
+        <property key="collection" type="object" isList="true" required="true">
             <caption>Collection</caption>
             <category>Appearance</category>
             <description>Inform the option to the Nav pills</description>
@@ -16,6 +16,12 @@
                     <description>Option label to be displayed</description>
                 </property>
             </properties>
+        </property>
+        <property key="messageMicroflow" type="microflow" required="false">
+            <caption>Trigger microflow</caption>
+            <category>Behavior</category>
+            <description>Return value: the selected option.</description>
+            <returnType type="String" />
         </property>
     </properties>
 </widget>
