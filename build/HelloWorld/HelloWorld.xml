@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="HelloWorld.widget.HelloWorld" needsEntityContext="false" 
+    xmlns="http://www.mendix.com/widget/1.0/">
+    <name>HelloWorld</name>
+    <description>This shows Hello World through React</description>
+    <icon />
+    <properties>
+        <property key="collection" type="object" isList="true">
+            <caption>Collection</caption>
+            <category>Appearance</category>
+            <description>Inform the option to the Nav pills</description>
+            <properties>
+                <property key="text" type="string">
+                    <caption>Option</caption>
+                    <category>Data source</category>
+                    <description>Option label to be displayed</description>
+                </property>
+            </properties>
+        </property>
+    </properties>
+</widget>
