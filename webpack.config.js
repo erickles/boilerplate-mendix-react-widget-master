@@ -22,13 +22,14 @@ var config = {
     module: {
         loaders: [
             {
-                test: /\.jsx?$/, loader: ['babel-loader', 'eslint-loader'], exclude: /node_modules/
+                test: /\.jsx?$/, loader: ['babel-loader'], exclude: /node_modules/
             }
         ]
     },
     externals: {
         dojoBaseDeclare: "dojo/_base/declare",
-        widgetBase: "mxui/widget/_WidgetBase"
+        widgetBase: "mxui/widget/_WidgetBase",
+        lang: "dojo/_base/lang"
     },
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
