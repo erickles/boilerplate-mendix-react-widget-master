@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="Base64Viewer.widget.Base64Viewer" needsEntityContext="true"
+    xmlns="http://www.mendix.com/widget/1.0/">
+    <name>Base64Viewer</name>
+    <description>This widget shows an image by providing the base64 image string</description>
+    <icon />
+    <properties>
+        <property key="baseString" type="attribute" required="true">
+            <caption>Base 64 string</caption>
+            <category>Appearance</category>
+            <description>The base string to be rendered.</description>
+            <attributeTypes>
+                <attributeType name="String" />
+            </attributeTypes>
+        </property>
+    </properties>
+</widget>

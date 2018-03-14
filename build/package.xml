@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <package xmlns="http://www.mendix.com/package/1.0/">
-    <clientModule name="HelloWorld" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
+    <clientModule name="Base64Viewer" version="1.0.0" xmlns="http://www.mendix.com/clientModule/1.0/">
         <widgetFiles>
-            <widgetFile path="HelloWorld/HelloWorld.xml" />
+            <widgetFile path="Base64Viewer/Base64Viewer.xml" />
         </widgetFiles>
         <files>
-            <file path="HelloWorld/widget/" />
+            <file path="Base64Viewer/widget/" />
         </files>
     </clientModule>
 </package>

@@ -1,5 +1,5 @@
 {
-  "name": "HelloWorld",
+  "name": "Base64Viewer",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -31,10 +31,10 @@
     "compression-webpack-plugin":"1.1.6"
   },
   "scripts": {
-    "clean": "del /S /f /q build\\* && del widget.mpk",
+    "clean": "del /S /f /q build\\* && del Base64Widget.mpk",
     "prebuild": "npm run clean",
-    "build": "webpack && node package.xml.js && cd build && 7z a -r widget.zip * && ren *.zip *.mpk",
-    "postbuild": "copy build\\widget.mpk mendix\\widgets\\"
+    "build": "webpack && node package.xml.js && cd build && 7z a -r Base64Widget.zip * && ren *.zip *.mpk",
+    "postbuild": "copy build\\Base64Widget.mpk mendix\\widgets\\"
   },
   "author": "",
   "license": ""
